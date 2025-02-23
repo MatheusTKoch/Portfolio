@@ -1,15 +1,18 @@
-import { Button, HStack } from "@chakra-ui/react";
+import { Avatar, HStack } from "@chakra-ui/react";
+import profile from "../src/assets/profile.jpeg"
 import './App.css'
 
 function App() {
+let size = "md";
 
   return (
     <>
       <div>
-        <h1>Olá, eu sou o Matheus</h1>
         <HStack>
-          <Button>Click me</Button>
-          <Button>Click me</Button>
+          <h1>Olá, eu sou o Matheus </h1>
+          <Avatar.Root size={size}>
+            <Avatar.Image src={profile}></Avatar.Image>
+          </Avatar.Root>
         </HStack>
       </div>
     </>
