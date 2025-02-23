@@ -1,3 +1,4 @@
+import { Button, HStack } from "@chakra-ui/react";
 import './App.css'
 
 function App() {
@@ -6,8 +7,10 @@ function App() {
     <>
       <div>
         <h1>Olá, eu sou o Matheus</h1>
-        <div>Tenho experiência com </div>
-        <button>tecnologias</button>
+        <HStack>
+          <Button>Click me</Button>
+          <Button>Click me</Button>
+        </HStack>
       </div>
     </>
   )
