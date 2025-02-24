@@ -10,7 +10,7 @@ function App() {
       <Header></Header>
       <div className="conteudo"> 
         <HStack>
-          <h1>Olá, eu sou o Matheus </h1>
+          <h1>Olá, eu sou o Matheus <span>👋</span></h1>
           <Avatar.Root size="2xl" variant="outline">
             <Avatar.Image src={profile}></Avatar.Image>
           </Avatar.Root>
