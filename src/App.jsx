@@ -1,6 +1,6 @@
-import { Avatar, HStack } from "@chakra-ui/react";
+import { HStack } from "@chakra-ui/react";
 import Header from "./Header.jsx";
-import profile from "../src/assets/profile.jpeg"
+import Description from "./Description.jsx";
 import './App.css'
 
 function App() {
@@ -9,12 +9,10 @@ function App() {
     <>
       <Header></Header>
       <div className={"conteudo"}> 
-        <HStack>
+        <HStack position="relative" bottom="15vh">
           <h1>Olá, eu sou o Matheus <span>👋</span></h1>
-          <Avatar.Root size={"2xl"} variant={"outline"}>
-            <Avatar.Image src={profile}></Avatar.Image>
-          </Avatar.Root>
         </HStack>
+        <Description></Description>
       </div>
     </>
   )
