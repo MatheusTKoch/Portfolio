@@ -1,7 +1,7 @@
 import { HStack, Center } from "@chakra-ui/react";
 import Header from "./Header.jsx";
 import Description from "./Description.jsx";
-import Content from "./Content.jsx";
+import Tecnologies from "./Tecnologies.jsx";
 import './App.css'
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         </div>
       </Center>
       <Description></Description>
-      <Content></Content>
+      <Tecnologies></Tecnologies>
     </>
   )
 }
