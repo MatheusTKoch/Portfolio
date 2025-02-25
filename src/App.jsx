@@ -1,7 +1,8 @@
-import { HStack, Center } from "@chakra-ui/react";
+import { HStack, Center, Text } from "@chakra-ui/react";
 import Header from "./Header.jsx";
 import Description from "./Description.jsx";
 import Tecnologies from "./Tecnologies.jsx";
+import Timeline from "./Timeline.jsx";
 import './App.css'
 
 function App() {
@@ -10,14 +11,13 @@ function App() {
     <>
       <Header></Header>
       <Center>
-        <div className={"conteudo"}> 
           <HStack position="relative" bottom="15vh">
-            <h1>Olá, eu sou o Matheus <span>👋</span></h1>
+            <Text color="whitesmoke" fontSize="xxx-large">Olá, eu sou o Matheus <span>👋</span></Text>
           </HStack>
-        </div>
       </Center>
       <Description></Description>
       <Tecnologies></Tecnologies>
+      <Timeline></Timeline>
     </>
   )
 }
