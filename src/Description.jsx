@@ -5,7 +5,7 @@ function App() {
     return (
         <>
         <Center>
-            <HStack>
+            <HStack paddingTop="10vh">
                 <Flex>
                     <Text textStyle="xl" fontWeight="medium" position="relative" left="15vw">Sobre Mim</Text>
                     <Text textAlign="justify" width="25vw" position="relative" top="6vh">Atualmente trabalho como suporte técnico a sistemas ERP, 

@@ -7,7 +7,7 @@ function App() {
     return (
         <>
         <Center>
-            <Box position="relative" top="10vh">
+            <Box position="relative" top="10vh" paddingTop="10vh" > 
                 <Text textStyle="xl" fontWeight="medium" position="relative">Tecnologias</Text>
                 <HStack position="relative" paddingTop="1vh">
                     <IconButton size="xl" variant="ghost" rounded="xl" colorPalette="green" _hover={{ outline: "solid", outlineColor:"green.400" }}>
