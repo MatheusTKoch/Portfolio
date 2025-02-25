@@ -1,4 +1,4 @@
-import { HStack } from "@chakra-ui/react";
+import { HStack, Center } from "@chakra-ui/react";
 import Header from "./Header.jsx";
 import Description from "./Description.jsx";
 import Content from "./Content.jsx";
@@ -9,13 +9,15 @@ function App() {
   return (
     <>
       <Header></Header>
-      <div className={"conteudo"}> 
-        <HStack position="relative" bottom="15vh">
-          <h1>Olá, eu sou o Matheus <span>👋</span></h1>
-        </HStack>
-        <Description></Description>
-        <Content></Content>
-      </div>
+      <Center>
+        <div className={"conteudo"}> 
+          <HStack position="relative" bottom="15vh">
+            <h1>Olá, eu sou o Matheus <span>👋</span></h1>
+          </HStack>
+        </div>
+      </Center>
+      <Description></Description>
+      <Content></Content>
     </>
   )
 }
