@@ -6,7 +6,7 @@ function App() {
         <Text textStyle="xl" fontWeight="medium" position="relative" top="15vh">Projetos</Text>
             <Center position="relative" top="10vh" paddingTop="10vh">
                 
-                <Card.Root position="relative" right="1vw" height="40vh" width="30vw" padding="2%">
+                <Card.Root position="relative" height="40vh" width="30vw" padding="2%">
                     <Card.Body>
                         <Image></Image>
                     </Card.Body>

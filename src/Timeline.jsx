@@ -17,7 +17,7 @@ function App() {
                         <TimelineContent>
                         <TimelineTitle>Suporte de Sistema ERP</TimelineTitle>
                         <TimelineDescription>jul de 2022 - o momento</TimelineDescription>
-                        <Text textStyle="md">
+                        <Text textStyle="md" textAlign="justify">
                             Atendimento, treinamento e suporte a cliente de sistema ERP;
                             Instalação e suporte de equipamentos como impressoras e demais equipamentos fiscais;
                             Manutenção e correção de erros relacionados a bancos de dados SQL;
@@ -31,7 +31,7 @@ function App() {
                         <TimelineContent>
                         <TimelineTitle>Estagiário de Engenharia</TimelineTitle>
                         <TimelineDescription>fev de 2021 - dez de 2021</TimelineDescription>
-                        <Text textStyle="md">
+                        <Text textStyle="md" textAlign="justify" >
                             Estagiário na área de engenharia de produtos.
                         </Text>
                         </TimelineContent>
@@ -43,7 +43,7 @@ function App() {
                         <TimelineContent>
                         <TimelineTitle>Atendente</TimelineTitle>
                         <TimelineDescription>out de 2017 - jan de 2021</TimelineDescription>
-                        <Text textStyle="md">
+                        <Text textStyle="md" textAlign="justify">
                             Atendente na área de alimentos, atuando como repositor e manutenção do software da empresa.
                         </Text>
                         </TimelineContent>
