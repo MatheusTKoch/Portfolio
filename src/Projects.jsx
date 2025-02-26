@@ -10,29 +10,28 @@ const projectsData = [
     description: "Aplicativo para detalhamento da previsão atual com suporte para múltiplas cidades e visualização de dados.",
     image: "/images/weather-app.jpg",
     technologies: ["VueJS", "Flask", "Open Weather API"],
-    demoUrl: "matheustkoch.github.io/weather_app/",
+    demoUrl: "https://matheustkoch.github.io/weather_app/",
     repoUrl: "https://github.com/MatheusTKoch/weather_app"
   },
   {
     id: 2,
-    title: "Task Manager",
-    description: "Aplicativo de gerenciamento de tarefas com funcionalidades de arrastar e soltar, filtros e estatísticas.",
+    title: "Divismart",
+    description: "Plataforma para controle e acompanhamento de investimentos, com ativos como ações, fundos imobiliários e tesouro direto. Também conta com gráficos para auxiliar na visualização - em progresso.",
     image: "/images/task-manager.jpg", 
-    technologies: ["React", "Firebase", "Redux"],
-    demoUrl: "https://task-manager.exemplo.com",
-    repoUrl: "https://github.com/seu-usuario/task-manager"
+    technologies: ["Vue", "ExpressJS", "MySQL", "Cheerio"],
+    demoUrl: "",
+    repoUrl: "https://github.com/MatheusTKoch/DiviSmart"
   },
   {
     id: 3,
-    title: "E-commerce",
-    description: "Plataforma de e-commerce com carrinho de compras, sistema de pagamento e painel administrativo.",
+    title: "Task Project",
+    description: "Aplicativo para controle execução de tarefas diárias.",
     image: "/images/ecommerce.jpg", 
-    technologies: ["React", "Node.js", "MongoDB"],
-    demoUrl: "https://ecommerce.exemplo.com",
-    repoUrl: "https://github.com/seu-usuario/ecommerce"
+    technologies: ["Vue", "Firebase", "ExpressJS"],
+    demoUrl: "https://matheustkoch.github.io/task-project/",
+    repoUrl: "https://github.com/MatheusTKoch/task-project"
   }
 ];
-
 
 const ProjectCard = ({ project }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -132,21 +131,11 @@ function App() {
     <Container maxW="container.xl" py={20}>
       <VStack spacing={12}>
         <Heading
-          as="h2"
           fontSize="3xl"
           fontWeight="bold"
           textAlign="center"
           position="relative"
-          _after={{
-            content: '""',
-            width: "80px",
-            height: "4px",
-            background: "teal.400",
-            position: "absolute",
-            bottom: "-12px",
-            left: "50%",
-            transform: "translateX(-50%)"
-          }}
+          paddingBottom="5%"
         >
           Projetos
         </Heading>
