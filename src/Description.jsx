@@ -1,23 +1,55 @@
-import { HStack, Avatar, Flex, Text, Center } from "@chakra-ui/react";
+import { Box, Text, VStack, Container, Flex, Avatar } from "@chakra-ui/react";
 import profile from "./assets/profile.jpeg";
 
-function App() {
+function Description() {
     return (
-        <>
-        <Center>
-            <HStack paddingTop="10vh">
-                <Flex>
-                    <Text textStyle="xl" fontWeight="medium" position="relative" left="15vw">Sobre Mim</Text>
-                    <Text textAlign="justify" width="25vw" position="relative" top="6vh">Atualmente trabalho como suporte técnico a sistemas ERP, 
-                        tenho interesse pela área de desenvolvimento web, com foco em aplicações Fullstack.</Text>
-                    <Avatar.Root position="relative" bottom="2vh" left="5vw" size="2xl" variant="outline">
-                        <Avatar.Image src={profile}></Avatar.Image>
+        <Box
+            as="section"
+            py={{ base: 8, md: 16 }}
+            px={{ base: 4, md: 8 }}
+        >
+            <Container maxW="container.lg">
+                <Flex
+                    direction={{ base: "column", md: "row" }}
+                    align="center"
+                    gap={{ base: 6, md: 12 }}
+                >
+                    <Avatar.Root
+                        size={{ base: "xl", md: "2xl" }}
+                        border="2px solid"
+                        borderColor="gray.400"
+                        _hover={{
+                            transform: "scale(1.05)",
+                            transition: "all 0.3s"
+                        }}>
+                        <Avatar.Image
+                            src={profile}></Avatar.Image>
                     </Avatar.Root>
+                    <VStack
+                        align={{ base: "center", md: "start" }}
+                        spacing={4}
+                        flex={1}
+                    >
+                        <Text
+                            fontSize={{ base: "2xl", md: "3xl" }}
+                            fontWeight="bold"
+                            color="whitesmoke"
+                        >
+                            Sobre Mim
+                        </Text>
+                        <Text
+                            fontSize={{ base: "md", md: "lg" }}
+                            color="whitesmoke"
+                            textAlign={{ base: "center", md: "left" }}
+                        >
+                            Atualmente trabalho como suporte técnico a sistemas ERP, 
+                            tenho interesse pela área de desenvolvimento web, com foco em aplicações Fullstack.
+                        </Text>
+                    </VStack>
                 </Flex>
-            </HStack>
-        </Center>
-        </>
-    )
+            </Container>
+        </Box>
+    );
 }
 
-export default App;
+export default Description;
