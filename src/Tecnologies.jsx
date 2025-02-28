@@ -7,27 +7,30 @@ function Technologies() {
     return (
         <Box
             as="section"
-            py={{ base: 8, md: 16 }}
+            py={{ base: 25, md: 35 }} 
         >
             <Container maxW="container.lg">
                 <Text
                     fontSize={{ base: "2xl", md: "3xl" }}
                     fontWeight="bold"
                     textAlign="center"
-                    mb={{ base: 6, md: 10 }}
+                    mb={{ base: 12, md: 18 }}
+                    paddingBottom={"5%"} 
                 >
                     Tecnologias
                 </Text>
                 <SimpleGrid
                     columns={{ base: 2, sm: 3, md: 4 }}
                     spacing={{ base: 4, md: 6 }}
+                    gap={8}
                     justifyItems="center"
-                    maxW="800px"
+                    maxW="900px" 
                     mx="auto"
+                    px={{ base: 10, md: 14 }} 
                 >
                     <IconButton
                         aria-label="Vue"
-                        size="lg"
+                        size="2xl"
                         variant="ghost"
                         color="green.400"
                         rounded="xl"
@@ -35,11 +38,11 @@ function Technologies() {
                         _hover={{
                             transform: "translateY(-2px)"
                         }}>
-                        <FaVuejs size={24} />
+                        <FaVuejs />
                     </IconButton>
                     <IconButton
                         aria-label="React"
-                        size="lg"
+                        size="2xl"
                         variant="ghost"
                         color="cyan.400"
                         rounded="xl"
@@ -47,11 +50,11 @@ function Technologies() {
                         _hover={{
                             transform: "translateY(-2px)"
                         }}>
-                        <FaReact size={24} />
+                        <FaReact />
                     </IconButton>
                     <IconButton
                         aria-label="Node"
-                        size="lg"
+                        size="2xl"
                         variant="ghost"
                         color="green.400"
                         rounded="xl"
@@ -59,11 +62,11 @@ function Technologies() {
                         _hover={{
                             transform: "translateY(-2px)"
                         }}>
-                        <FaNodeJs size={24} />
+                        <FaNodeJs />
                     </IconButton>
                     <IconButton
                         aria-label="Javascript"
-                        size="lg"
+                        size="2xl"
                         variant="ghost"
                         color="yellow.400"
                         rounded="xl"
@@ -71,11 +74,11 @@ function Technologies() {
                         _hover={{
                             transform: "translateY(-2px)"
                         }}>
-                        <IoLogoJavascript size={24} />
+                        <IoLogoJavascript />
                     </IconButton>
                     <IconButton
                         aria-label="MySQL"
-                        size="lg"
+                        size="2xl"
                         variant="ghost"
                         color="blue.400"
                         rounded="xl"
@@ -83,11 +86,11 @@ function Technologies() {
                         _hover={{
                             transform: "translateY(-2px)"
                         }}>
-                        <SiMysql size={24} />
+                        <SiMysql />
                     </IconButton>
                     <IconButton
                         aria-label="Typescript"
-                        size="lg"
+                        size="2xl"
                         variant="ghost"
                         color="blue.600"
                         rounded="xl"
@@ -95,11 +98,11 @@ function Technologies() {
                         _hover={{
                             transform: "translateY(-2px)"
                         }}>
-                        <SiTypescript size={24} />
+                        <SiTypescript />
                     </IconButton>
                     <IconButton
                         aria-label="Java"
-                        size="lg"
+                        size="2xl"
                         variant="ghost"
                         color="red.400"
                         rounded="xl"
@@ -107,11 +110,11 @@ function Technologies() {
                         _hover={{
                             transform: "translateY(-2px)"
                         }}>
-                        <FaJava size={24} />      
+                        <FaJava />      
                     </IconButton>
                     <IconButton
                     aria-label="Python"
-                    size="lg"
+                    size="2xl"
                     variant="ghost"
                     color="blue.400"
                     rounded="xl"
@@ -119,7 +122,7 @@ function Technologies() {
                     _hover={{
                         transform: "translateY(-2px)"
                     }}>
-                        <FaPython size={24} />  
+                        <FaPython />  
                     </IconButton>
                 </SimpleGrid>
             </Container>
