@@ -1,5 +1,4 @@
 import { Box, Text, VStack, Container, Flex, Avatar } from "@chakra-ui/react";
-import profile from "./assets/profile.jpeg";
 
 function Description() {
     return (
@@ -14,17 +13,16 @@ function Description() {
                     align="center"
                     gap={{ base: 6, md: 12 }}
                 >
-                    <Avatar.Root
+                    <Avatar
                         size={{ base: "xl", md: "2xl" }}
+                        src="/Portfolio/images/profile.jpeg"
                         border="2px solid"
                         borderColor="gray.400"
                         _hover={{
                             transform: "scale(1.05)",
                             transition: "all 0.3s"
-                        }}>
-                        <Avatar.Image
-                            src={profile}></Avatar.Image>
-                    </Avatar.Root>
+                        }}
+                    />
                     <VStack
                         align={{ base: "center", md: "start" }}
                         spacing={4}
