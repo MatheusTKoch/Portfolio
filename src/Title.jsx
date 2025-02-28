@@ -2,46 +2,71 @@ import { Box, Text, Flex, useBreakpointValue } from "@chakra-ui/react";
 
 function Title() {
   const fontSize = useBreakpointValue({
-    base: "xl",
-    sm: "2xl",
-    md: "3xl",
-    lg: "4xl"
+    base: "3xl",
+    sm: "4xl",
+    md: "5xl",
+    lg: "6xl"
   });
   
   const spacing = useBreakpointValue({
-    base: 2,
-    md: 4
+    base: 4,
+    md: 6
   });
 
   const iconSize = useBreakpointValue({
-    base: "24px",
-    md: "32px",
-    lg: "40px"
+    base: "32px",
+    md: "40px",
+    lg: "48px"
   });
 
   return (
     <Box 
       as="section"
-      py={12}
       width="100%"
+      paddingTop={{ base: "120px", md: "140px" }}
+      paddingBottom={{ base: "40px", md: "60px" }}
+      minHeight={{ base: "30vh", md: "40vh" }}
     >
       <Flex
-        direction={{ base: "column", md: "row" }}
-        align={{ base: "center", md: "center" }}
+        direction="column"
+        align="center"
         justify="center"
         maxW="1200px"
         mx="auto"
-        gap={spacing}
+        px={{ base: 4, md: 8 }}
       >
-        <Text
-          fontSize={fontSize}
-          fontWeight="bold"
-          textAlign={{ base: "center", md: "left" }}
+        <Flex
+          direction={{ base: "column", md: "row" }}
+          align="center"
+          justify="center"
+          gap={spacing}
         >
-          Olá, eu sou o Matheus
-        </Text>
-        <Text fontSize={iconSize} display="inline-block">
-          👋
+          <Text
+            fontSize={fontSize}
+            fontWeight="bold"
+            textAlign="center"
+            letterSpacing="tight"
+            color="whitesmoke"
+            mb={{ base: 2, md: 0 }}
+          >
+            Olá, eu sou o Matheus
+          </Text>
+          <Text 
+            fontSize={iconSize} 
+            display="inline-block"
+            animation="wave 2.5s infinite"
+          >
+            👋
+          </Text>
+        </Flex>
+        <Text
+          mt={6}
+          fontSize={{ base: "lg", md: "xl" }}
+          color="gray.300"
+          textAlign="center"
+          maxW="600px"
+        >
+          Desenvolvedor Web Fullstack e estudante de Análise e Desenvolvimento de Sistemas   
         </Text>
       </Flex>
     </Box>
