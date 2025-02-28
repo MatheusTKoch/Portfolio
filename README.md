@@ -1,8 +1,38 @@
-# React + Vite
+# Portfólio - Matheus Koch
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Visão Geral
+Site de portfólio pessoal construído com React, Vite e Chakra UI. Este projeto apresenta minhas habilidades, projetos e jornada profissional como Desenvolvedor Full Stack.
 
-Currently, two official plugins are available:
+## 🚀 Funcionalidades
+- Design responsivo
+- Interface moderna com componentes Chakra UI
+- Animações suaves
+- Apresentação profissional de projetos
+- Exibição interativa de stack tecnológica
+- Linha do tempo profissional
+- Integração com redes sociais
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Tecnologias Utilizadas
+- React
+- Vite
+- Chakra UI
+- React Icons
+- Animações CSS
+
+## 💻 Configuração do Projeto
+```bash
+# Clone o repositório
+git clone https://github.com/MatheusTKoch/portfolio
+```
+```bash
+# Entre na pasta do projeto
+cd portfolio
+```
+```bash
+# Instale as dependências
+npm install
+```
+```bash
+# Inicie o servidor de desenvolvimento
+npm run dev
+```
