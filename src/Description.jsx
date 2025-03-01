@@ -13,18 +13,19 @@ function Description() {
                     align="center"
                     gap={{ base: 6, md: 12 }}
                 >
-                    <Avatar
+                    <Avatar.Root
                         name="Matheus Koch"
                         size={{ base: "xl", md: "2xl" }}
-                        src={"/profile.jpeg"}
-                        fallback={<Box bg="gray.400" borderRadius="full" />}
                         border="2px solid"
                         borderColor="gray.400"
                         _hover={{
                             transform: "scale(1.05)",
                             transition: "all 0.3s"
                         }}
-                    />
+                    >
+                        <Avatar.Image
+                            src="/profile.jpeg" />
+                    </Avatar.Root>
                     <VStack
                         align={{ base: "center", md: "start" }}
                         spacing={4}
