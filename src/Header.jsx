@@ -3,6 +3,15 @@ import { IconButton, Flex, Link, Box } from "@chakra-ui/react";
 import { useColorModeValue } from "./components/ui/color-mode";
 
 function Header() {
+    const bgColor = useColorModeValue(
+        'rgba(34, 43, 53, 0.9)',
+        'rgba(26, 32, 44, 0.9)'    
+    );
+    const borderColor = useColorModeValue(
+        'rgba(34, 43, 53, 0.9)', 
+        'rgba(26, 32, 44, 0.3)'    
+    );
+
     return (
         <Box
             as="header"
@@ -12,9 +21,11 @@ function Header() {
             right={0}
             zIndex={1000}
             backdropFilter="blur(10px)"
-            bg={useColorModeValue('rgba(255, 255, 255, 0.8)', 'rgba(26, 32, 44, 0.8)')}
-            boxShadow="sm"
+            backgroundColor={bgColor}
+            borderBottom="1px solid"
+            borderColor={borderColor}
             transition="all 0.3s"
+            color="white"
         >
             <Flex
                 maxW="container.lg"
@@ -36,8 +47,10 @@ function Header() {
                             variant="ghost"
                             rounded="full"
                             size="lg"
+                            color="white"
                             _hover={{
-                                bg: "whiteAlpha.200"
+                                bg: "whiteAlpha.200",
+                                color: "white"
                             }}
                         >
                             <FaGithub size={24}/>
@@ -54,8 +67,10 @@ function Header() {
                             variant="ghost"
                             rounded="full"
                             size="lg"
+                            color="white"
                             _hover={{
-                                bg: "whiteAlpha.200"
+                                bg: "whiteAlpha.200",
+                                color: "white"
                             }}
                         >
                             <FaLinkedin size={24}/>

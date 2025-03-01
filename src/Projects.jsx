@@ -35,16 +35,34 @@ const projectsData = [
 
 const ProjectCard = ({ project }) => {
   const [isHovered, setIsHovered] = useState(false);
-  const cardBg = useColorModeValue("white", "gray.800");
-  const borderColor = useColorModeValue("gray.200", "gray.700");
-  
+  const cardBg = useColorModeValue(
+    'rgba(54, 50, 50, 0.9)',  
+    'rgba(45, 55, 72, 0.9)'      
+  );
+  const borderColor = useColorModeValue(
+    'rgba(54, 50, 50, 0.9)',  
+    'rgba(74, 85, 104, 0.6)'     
+  );
+  const textColor = useColorModeValue(
+    'whitesmoke',     
+    'rgba(226, 232, 240, 0.9)'   
+  );
+  const badgeBg = useColorModeValue(
+    'rgba(226, 232, 240, 0.8)',  
+    'rgba(74, 85, 104, 0.8)'     
+  );
+  const badgeColor = useColorModeValue(
+    'rgba(41, 46, 54, 0.9)',     
+    'rgba(226, 232, 240, 0.9)'  
+  );
+
   return (
     <Box
       maxW="sm"
       borderWidth="1px"
       borderRadius="lg"
       overflow="hidden"
-      boxShadow={isHovered ? "lg" : "md"}
+      boxShadow={isHovered ? "xl" : "lg"}
       transition="all 0.3s"
       borderColor={borderColor}
       bg={cardBg}
@@ -64,9 +82,15 @@ const ProjectCard = ({ project }) => {
       />
       
       <Box p={6}>
-        <Box display="flex" alignItems="baseline">
+        <Box display="flex" alignItems="baseline" flexWrap="wrap" gap={2}>
           {project.technologies.map((tech, index) => (
-            <Badge key={index} borderRadius="full" px={2} mr={1} colorScheme="teal">
+            <Badge 
+              key={index} 
+              borderRadius="full" 
+              px={2} 
+              bg={badgeBg}
+              color={badgeColor}
+            >
               {tech}
             </Badge>
           ))}
@@ -77,11 +101,12 @@ const ProjectCard = ({ project }) => {
           fontSize="xl"
           fontWeight="semibold"
           lineHeight="tight"
+          color={textColor}
         >
           {project.title}
         </Heading>
         
-        <Text mt={2} fontSize="md" color={useColorModeValue("gray.600", "gray.400")}>
+        <Text mt={2} fontSize="md" color={textColor}>
           {project.description}
         </Text>
         
@@ -90,23 +115,32 @@ const ProjectCard = ({ project }) => {
             as={Link}
             href={project.demoUrl}
             isExternal
-            colorScheme="teal"
+            colorScheme="blue"
             variant="solid"
             size="sm"
             target="_blank"
-            _hover={{ transform: "scale(1.05)" }}
+            _hover={{ 
+              transform: project.title === "Divismart" ? "none" : "scale(1.05)",
+              bg: project.title === "Divismart" ? "blue.300" : "blue.500"
+            }}
+            isDisabled={project.title === "Divismart"}
+            opacity={project.title === "Divismart" ? 0.6 : 1}
+            cursor={project.title === "Divismart" ? "not-allowed" : "pointer"}
           >
-            Ver Demo
+            {project.title === "Divismart" ? "Em Desenvolvimento" : "Ver Demo"}
           </Button>
           <Button 
             as={Link}
             href={project.repoUrl}
             isExternal
-            colorScheme="gray"
+            bg="whitesmoke"
             variant="outline"
             size="sm"
             target="_blank"
-            _hover={{ bg: "gray.100" }}
+            _hover={{ 
+              bg: useColorModeValue('rgba(237, 242, 247, 0.8)', 'rgba(45, 55, 72, 0.8)'),
+              borderColor: useColorModeValue('rgba(203, 213, 224, 0.8)', 'rgba(74, 85, 104, 0.8)')
+            }}
           >
             Código
           </Button>
