@@ -4,10 +4,14 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
   plugins: [react(), tsconfigPaths()],
+  base: '/Portfolio/',
   build: {
     outDir: 'docs',
     assetsDir: 'assets',
-  },
-  base: '/Portfolio/',
-  publicDir: 'public',
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name][extname]'
+      }
+    }
+  }
 })
