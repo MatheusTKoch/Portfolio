@@ -14,8 +14,9 @@ function Description() {
                     gap={{ base: 6, md: 12 }}
                 >
                     <Avatar
+                        name="Profile"
                         size={{ base: "xl", md: "2xl" }}
-                        src="/Portfolio/images/profile.jpeg"
+                        src="./images/profile.jpeg"
                         border="2px solid"
                         borderColor="gray.400"
                         _hover={{

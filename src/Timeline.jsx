@@ -1,5 +1,5 @@
 import { Box, Text, VStack, Container } from "@chakra-ui/react";
-import { TimelineConnector, TimelineContent, TimelineDescription, TimelineItem, TimelineRoot, TimelineTitle } from "@/components/ui/timeline";
+import { TimelineConnector, TimelineContent, TimelineDescription, TimelineItem, TimelineRoot, TimelineTitle } from "./components/ui/timeline";
 import { FaCashRegister, FaProjectDiagram } from "react-icons/fa";
 import { BiSupport } from "react-icons/bi";
 

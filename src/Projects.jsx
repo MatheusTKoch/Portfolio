@@ -8,7 +8,7 @@ const projectsData = [
     id: 1,
     title: "Weather App",
     description: "Aplicativo para detalhamento da previsão atual com suporte para múltiplas cidades e visualização de dados.",
-    image: "/Portfolio/images/weather_app.png",
+    image: "./images/weather_app.png",
     technologies: ["VueJS", "Flask", "Open Weather API"],
     demoUrl: "https://matheustkoch.github.io/weather_app/",
     repoUrl: "https://github.com/MatheusTKoch/weather_app"
@@ -17,7 +17,7 @@ const projectsData = [
     id: 2,
     title: "Divismart",
     description: "Plataforma para controle e acompanhamento de investimentos, com ativos como ações, fundos imobiliários e tesouro direto. Também conta com gráficos para auxiliar na visualização - em progresso.",
-    image: "/Portfolio/images/divismart.png",
+    image: "./images/divismart.png",
     technologies: ["Vue", "ExpressJS", "MySQL", "Cheerio"],
     demoUrl: "",
     repoUrl: "https://github.com/MatheusTKoch/DiviSmart"
@@ -26,7 +26,7 @@ const projectsData = [
     id: 3,
     title: "Task Project",
     description: "Aplicativo para controle execução de tarefas diárias.",
-    image: "/Portfolio/images/task_project.png",
+    image: "./images/task_project.png",
     technologies: ["Vue", "Firebase", "ExpressJS"],
     demoUrl: "https://matheustkoch.github.io/task-project/",
     repoUrl: "https://github.com/MatheusTKoch/task-project"
@@ -59,6 +59,8 @@ const ProjectCard = ({ project }) => {
         objectFit="cover"
         height="200px"
         width="100%"
+        fallback={<Box height="200px" width="100%" bg="gray.100" />}
+        loading="lazy"
       />
       
       <Box p={6}>
@@ -126,7 +128,7 @@ ProjectCard.propTypes = {
   }).isRequired
 };
 
-function App() {
+function Projects() {
   return (
     <Container maxW="container.xl" top="10vh" py={20}>
       <VStack spacing={12}>
@@ -161,4 +163,4 @@ function App() {
   );
 }
 
-export default App;
+export default Projects;
