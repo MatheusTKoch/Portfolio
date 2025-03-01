@@ -24,7 +24,7 @@ function Description() {
                         }}
                     >
                         <Avatar.Image
-                            src="/Portfolio/profile.jpeg" />
+                            src="profile.jpeg" />
                     </Avatar.Root>
                     <VStack
                         align={{ base: "center", md: "start" }}

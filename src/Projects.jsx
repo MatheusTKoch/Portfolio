@@ -17,7 +17,7 @@ const projectsData = [
     id: 2,
     title: "Divismart",
     description: "Plataforma para controle e acompanhamento de investimentos, com ativos como ações, fundos imobiliários e tesouro direto. Também conta com gráficos para auxiliar na visualização - em progresso.",
-    image: "/divismart.png",
+    image: "divismart.png",
     technologies: ["Vue", "ExpressJS", "MySQL", "Cheerio"],
     demoUrl: "",
     repoUrl: "https://github.com/MatheusTKoch/DiviSmart"
@@ -26,7 +26,7 @@ const projectsData = [
     id: 3,
     title: "Task Project",
     description: "Aplicativo para controle execução de tarefas diárias.",
-    image: "Portfolio/task_project.png",
+    image: "task_project.png",
     technologies: ["Vue", "Firebase", "ExpressJS"],
     demoUrl: "https://matheustkoch.github.io/task-project/",
     repoUrl: "https://github.com/MatheusTKoch/task-project"
