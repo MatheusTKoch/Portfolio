@@ -15,7 +15,7 @@ function Description() {
                 >
                     <Avatar
                         size={{ base: "xl", md: "2xl" }}
-                        src={"assets/profile.jpeg"}
+                        src={"/assets/profile.jpeg"}
                         border="2px solid"
                         borderColor="gray.400"
                         _hover={{
