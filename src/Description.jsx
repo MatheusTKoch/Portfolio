@@ -16,7 +16,7 @@ function Description() {
                     <Avatar
                         name="Matheus Koch"
                         size={{ base: "xl", md: "2xl" }}
-                        src={"/Portfolio/images/profile.jpeg"}
+                        src={"/profile.jpeg"}
                         fallback={<Box bg="gray.400" borderRadius="full" />}
                         border="2px solid"
                         borderColor="gray.400"
