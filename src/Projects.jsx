@@ -8,7 +8,7 @@ const projectsData = [
     id: 1,
     title: "Weather App",
     description: "Aplicativo para detalhamento da previsão atual com suporte para múltiplas cidades e visualização de dados.",
-    image: "/assets/weather_app.png",
+    image: "/weather_app.png",
     technologies: ["VueJS", "Flask", "Open Weather API"],
     demoUrl: "https://matheustkoch.github.io/weather_app/",
     repoUrl: "https://github.com/MatheusTKoch/weather_app"
@@ -17,7 +17,7 @@ const projectsData = [
     id: 2,
     title: "Divismart",
     description: "Plataforma para controle e acompanhamento de investimentos, com ativos como ações, fundos imobiliários e tesouro direto. Também conta com gráficos para auxiliar na visualização - em progresso.",
-    image: "/assets/divismart.png",
+    image: "/divismart.png",
     technologies: ["Vue", "ExpressJS", "MySQL", "Cheerio"],
     demoUrl: "",
     repoUrl: "https://github.com/MatheusTKoch/DiviSmart"
@@ -26,7 +26,7 @@ const projectsData = [
     id: 3,
     title: "Task Project",
     description: "Aplicativo para controle execução de tarefas diárias.",
-    image: "/assets/task_project.png",
+    image: "/task_project.png",
     technologies: ["Vue", "Firebase", "ExpressJS"],
     demoUrl: "https://matheustkoch.github.io/task-project/",
     repoUrl: "https://github.com/MatheusTKoch/task-project"
