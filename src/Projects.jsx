@@ -25,7 +25,7 @@ const projectsData = [
   {
     id: 3,
     title: "Task Project",
-    description: "Aplicativo para controle execução de tarefas diárias.",
+    description: "Aplicativo para controle da execução de tarefas diárias.",
     image: "task_project.png",
     technologies: ["Vue", "Firebase", "ExpressJS"],
     demoUrl: "https://matheustkoch.github.io/task-project/",
