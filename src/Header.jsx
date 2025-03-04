@@ -47,7 +47,7 @@ function Header() {
                             variant="ghost"
                             rounded="full"
                             size="lg"
-                            color="white"
+                            color="black"
                             _hover={{
                                 bg: "whiteAlpha.200",
                                 color: "white"
@@ -67,7 +67,7 @@ function Header() {
                             variant="ghost"
                             rounded="full"
                             size="lg"
-                            color="white"
+                            color="black"
                             _hover={{
                                 bg: "whiteAlpha.200",
                                 color: "white"

@@ -83,9 +83,10 @@ const ProjectCard = ({ project }) => {
       
       <Box p={6}>
         <Box display="flex" alignItems="baseline" flexWrap="wrap" gap={2}>
-          {project.technologies.map((tech, index) => (
+          {project.technologies.map(
+            (tech) => (
             <Badge 
-              key={index} 
+              key={tech} 
               borderRadius="full" 
               px={2} 
               bg={badgeBg}
