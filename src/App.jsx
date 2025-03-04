@@ -4,6 +4,7 @@ import Description from "./Description.jsx";
 import Tecnologies from "./Tecnologies.jsx";
 import Projects from "./Projects.jsx";
 import Timeline from "./Timeline.jsx";
+import Contact from "./Contact.jsx";
 import { Box } from "@chakra-ui/react";
 import './App.css'
 
@@ -45,6 +46,7 @@ function App() {
       <Tecnologies />
       <Projects />
       <Timeline />
+      <Contact />
     </Box>
   );
 }
