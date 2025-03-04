@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { IconButton, Flex, Link, Box } from "@chakra-ui/react";
+import { IconButton, Flex, Link, Box, Text } from "@chakra-ui/react";
 import { useColorModeValue } from "./components/ui/color-mode";
 
 function Header() {
@@ -32,9 +32,24 @@ function Header() {
                 mx="auto"
                 py={3}
                 px={6}
-                justify="flex-end"
+                justify="space-between"
                 align="center"
             >
+                <Flex align="center">
+                    <Text
+                        fontSize="xl"
+                        fontWeight="bold"
+                        letterSpacing="wide"
+                    >
+                        <Text as="span" color="black">
+                            Matheus{" "}
+                        </Text>
+                        <Text as="span" color="white">
+                            T. K.
+                        </Text>
+                    </Text>
+                </Flex>
+
                 <Flex gap={4}>
                     <Link 
                         href="https://github.com/MatheusTKoch" 
