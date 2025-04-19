@@ -29,7 +29,9 @@ function Timeline() {
                                 <TimelineDescription>jul de 2022 - o momento</TimelineDescription>
                                 <Text textStyle="md" textAlign="justify">
                                     Atendimento, treinamento e suporte a cliente de sistema ERP;
+                                    <br />
                                     Instalação e suporte de equipamentos como impressoras e demais equipamentos fiscais;
+                                    <br />
                                     Manutenção e correção de erros relacionados a bancos de dados SQL;
                                 </Text>
                             </TimelineContent>

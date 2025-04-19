@@ -29,7 +29,7 @@ function Technologies() {
                     mx="auto"
                     px={{ base: 10, md: 14 }}
                 >
-                    <Tooltip content="Vue.js - Framework JavaScript progressivo para construção de interfaces">
+                    <Tooltip content="Vue.js - Framework JavaScript progressivo para construção de interfaces" interactive>
                         <IconButton
                             aria-label="Vue"
                             size="2xl"
@@ -46,7 +46,7 @@ function Technologies() {
                         </IconButton>
                     </Tooltip>
 
-                    <Tooltip content="React - Biblioteca JavaScript para criar interfaces de usuário">
+                    <Tooltip content="React - Biblioteca JavaScript para criar interfaces de usuário" interactive>
                         <IconButton
                             aria-label="React"
                             size="2xl"
@@ -63,7 +63,7 @@ function Technologies() {
                         </IconButton>
                     </Tooltip>
 
-                    <Tooltip content="Node.js - Ambiente de execução JavaScript server-side">
+                    <Tooltip content="Node.js - Ambiente de execução JavaScript server-side" interactive>
                         <IconButton
                             aria-label="Node"
                             size="2xl"
@@ -80,7 +80,7 @@ function Technologies() {
                         </IconButton>
                     </Tooltip>
 
-                    <Tooltip content="JavaScript - Linguagem de programação versátil e dinâmica">
+                    <Tooltip content="JavaScript - Linguagem de programação versátil e dinâmica" interactive>
                         <IconButton
                             aria-label="Javascript"
                             size="2xl"
@@ -97,7 +97,7 @@ function Technologies() {
                         </IconButton>
                     </Tooltip>
 
-                    <Tooltip content="MySQL - Sistema de gerenciamento de banco de dados relacional">
+                    <Tooltip content="MySQL - Sistema de gerenciamento de banco de dados relacional" interactive>
                         <IconButton
                             aria-label="MySQL"
                             size="2xl"
@@ -114,7 +114,7 @@ function Technologies() {
                         </IconButton>
                     </Tooltip>
 
-                    <Tooltip content="TypeScript - Superset tipado do JavaScript">
+                    <Tooltip content="TypeScript - Superset tipado do JavaScript" interactive>
                         <IconButton
                             aria-label="Typescript"
                             size="2xl"
@@ -131,7 +131,7 @@ function Technologies() {
                         </IconButton>
                     </Tooltip>
 
-                    <Tooltip content="Java - Linguagem de programação orientada a objetos">
+                    <Tooltip content="Java - Linguagem de programação orientada a objetos" interactive>
                         <IconButton
                             aria-label="Java"
                             size="2xl"
@@ -148,7 +148,7 @@ function Technologies() {
                         </IconButton>
                     </Tooltip>
 
-                    <Tooltip content="Python - Linguagem de programação de alto nível">
+                    <Tooltip content="Python - Linguagem de programação de alto nível" interactive>
                         <IconButton
                             aria-label="Python"
                             size="2xl"
