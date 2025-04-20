@@ -14,6 +14,7 @@ function App() {
       <Box
         position="relative"
         minH="100vh"
+        width="100%"
         _before={{
           content: '""',
           position: "absolute",
@@ -21,11 +22,12 @@ function App() {
           left: 0,
           right: 0,
           bottom: 0,
-          zIndex: 0
+          zIndex: 0,
+          width: "100%"
         }}
       >
         <Header />
-        <Box pt="70px" position="relative" zIndex="1"> 
+        <Box pt="70px" position="relative" zIndex="1" width="100%"> 
           <Title />
           <Description />
           <Tecnologies />
