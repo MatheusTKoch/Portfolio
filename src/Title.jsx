@@ -1,4 +1,5 @@
 import { Box, Text, Flex, useBreakpointValue } from "@chakra-ui/react";
+import './App.css';
 
 function Title() {
   const fontSize = useBreakpointValue({
@@ -26,6 +27,8 @@ function Title() {
       paddingTop={{ base: "120px", md: "140px" }}
       paddingBottom={{ base: "40px", md: "60px" }}
       minHeight={{ base: "30vh", md: "40vh" }}
+      position="relative"
+      zIndex="1"
     >
       <Flex
         direction="column"
@@ -52,9 +55,8 @@ function Title() {
             Olá, eu sou o Matheus
           </Text>
           <Text 
-            fontSize={iconSize} 
-            display="inline-block"
-            animation="wave 2.5s infinite"
+            fontSize={iconSize}
+            className="wave-animation"
           >
             👋
           </Text>
