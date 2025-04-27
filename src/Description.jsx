@@ -43,7 +43,7 @@ function Description() {
                             color="whitesmoke"
                             textAlign={{ base: "center", md: "left" }}
                         >
-                            Desenvolvedor Fullstack com em suporte a sistemas ERP e 
+                            Desenvolvedor Fullstack com experiência em suporte a sistemas ERP e 
                             especialização em desenvolvimento web. 
                             Focado em criar soluções eficientes e escaláveis.
                         </Text>
