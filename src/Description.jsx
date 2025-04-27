@@ -43,8 +43,9 @@ function Description() {
                             color="whitesmoke"
                             textAlign={{ base: "center", md: "left" }}
                         >
-                            Atualmente trabalho como suporte técnico a sistemas ERP, 
-                            tenho interesse pela área de desenvolvimento web, com foco em aplicações Fullstack.
+                            Desenvolvedor Fullstack com em suporte a sistemas ERP e 
+                            especialização em desenvolvimento web. 
+                            Focado em criar soluções eficientes e escaláveis.
                         </Text>
                     </VStack>
                 </Flex>

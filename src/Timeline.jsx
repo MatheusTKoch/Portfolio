@@ -26,7 +26,7 @@ function Timeline() {
                             </TimelineConnector>
                             <TimelineContent>
                                 <TimelineTitle>Suporte de Sistema ERP</TimelineTitle>
-                                <TimelineDescription>jul de 2022 - o momento</TimelineDescription>
+                                <TimelineDescription>jul de 2022 - abr de 2025</TimelineDescription>
                                 <Text textStyle="md" textAlign="justify">
                                     Atendimento, treinamento e suporte a cliente de sistema ERP;
                                     Instalação e suporte de equipamentos como impressoras e demais equipamentos fiscais;
