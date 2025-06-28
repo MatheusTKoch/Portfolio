@@ -68,7 +68,7 @@ function Title() {
           textAlign="center"
           maxW="600px"
         >
-          Desenvolvedor Web Fullstack e estudante de Análise e Desenvolvimento de Sistemas   
+          Desenvolvedor de Software e estudante de Análise e Desenvolvimento de Sistemas   
         </Text>
       </Flex>
     </Box>

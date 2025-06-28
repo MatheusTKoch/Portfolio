@@ -1,7 +1,7 @@
 import { Box, Text, VStack, Container } from "@chakra-ui/react";
 import { TimelineConnector, TimelineContent, TimelineDescription, TimelineItem, TimelineRoot, TimelineTitle } from "./components/ui/timeline";
 import { FaCashRegister, FaProjectDiagram } from "react-icons/fa";
-import { BiSupport } from "react-icons/bi";
+import { BiSupport, BiExpandHorizontal } from "react-icons/bi";
 
 function Timeline() {
     return (
@@ -20,6 +20,22 @@ function Timeline() {
                 </Text>
                 <VStack spacing={4} align="stretch">
                     <TimelineRoot>
+                        <TimelineItem>
+                            <TimelineConnector>
+                                <BiExpandHorizontal></BiExpandHorizontal>
+                            </TimelineConnector>
+                            <TimelineContent>
+                                <TimelineTitle>Desenvolvedor de Software</TimelineTitle>
+                                <TimelineDescription>mai de 2025 - o momento</TimelineDescription>
+                                <Text textStyle="md" textAlign="justify">
+                                    Desenvolvimento de software para produtos como ERP;
+                                    <br />
+                                    Manutencao, correção e ajustes de bancos de dados Firebird;
+                                    <br />
+                                    Treinamento e auxílio a clientes de sistema ERP;
+                                </Text>
+                            </TimelineContent>
+                        </TimelineItem>
                         <TimelineItem>
                             <TimelineConnector>
                                 <BiSupport></BiSupport>
