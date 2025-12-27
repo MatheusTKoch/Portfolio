@@ -30,6 +30,16 @@ const projectsData = [
     technologies: ["Vue", "Firebase", "ExpressJS"],
     demoUrl: "https://matheustkoch.github.io/task-project/",
     repoUrl: "https://github.com/MatheusTKoch/task-project"
+  },
+  {
+    id: 4,
+    title: "Backup Obsidian",
+    description: "Script em Python para realizar backup automático de arquivos do Obsidian, com opções de agendamento e personalização.",
+    image: "obsidian_backup_tool.png",
+    technologies: ["Python"],
+    demoUrl: "",
+    repoUrl: "https://github.com/MatheusTKoch/Backup_Obsidian",
+    downloadUrl: "https://github.com/MatheusTKoch/Backup_Obsidian/releases/latest"
   }
 ];
 
@@ -80,7 +90,6 @@ const ProjectCard = ({ project }) => {
         fallback={<Box height="200px" width="100%" bg="gray.100" />}
         loading="lazy"
       />
-      
       <Box p={6}>
         <Box display="flex" alignItems="baseline" flexWrap="wrap" gap={2}>
           {project.technologies.map(
@@ -112,24 +121,43 @@ const ProjectCard = ({ project }) => {
         </Text>
         
         <HStack mt={4} spacing={4} justifyContent="center">
-          <Button 
-            as={Link}
-            href={project.demoUrl}
-            isExternal
-            colorScheme="blue"
-            variant="solid"
-            size="sm"
-            target="_blank"
-            _hover={{ 
-              transform: project.title === "Divismart" ? "none" : "scale(1.05)",
-              bg: project.title === "Divismart" ? "blue.300" : "blue.500"
-            }}
-            isDisabled={project.title === "Divismart"}
-            opacity={project.title === "Divismart" ? 0.6 : 1}
-            cursor={project.title === "Divismart" ? "not-allowed" : "pointer"}
-          >
-            {project.title === "Divismart" ? "Em Desenvolvimento" : "Ver Demo"}
-          </Button>
+          {project.title === "Backup Obsidian" ? (
+            <Button
+              as={Link}
+              // eslint-disable-next-line react/prop-types
+              href={project.downloadUrl}
+              isExternal
+              colorScheme="green"
+              variant="solid"
+              size="sm"
+              target="_blank"
+              _hover={{
+                transform: "scale(1.05)",
+                bg: "green.500"
+              }}
+            >
+              Download
+            </Button>
+          ) : (
+            <Button 
+              as={Link}
+              href={project.demoUrl}
+              isExternal
+              colorScheme="blue"
+              variant="solid"
+              size="sm"
+              target="_blank"
+              _hover={{ 
+                transform: project.title === "Divismart" ? "none" : "scale(1.05)",
+                bg: project.title === "Divismart" ? "blue.300" : "blue.500"
+              }}
+              isDisabled={project.title === "Divismart"}
+              opacity={project.title === "Divismart" ? 0.6 : 1}
+              cursor={project.title === "Divismart" ? "not-allowed" : "pointer"}
+            >
+              {project.title === "Divismart" ? "Em Desenvolvimento" : "Ver Demo"}
+            </Button>
+          )}
           <Button 
             as={Link}
             href={project.repoUrl}
@@ -164,6 +192,9 @@ ProjectCard.propTypes = {
 };
 
 function Projects() {
+  const mainProjects = projectsData.slice(0, 3);
+  const backupProject = projectsData[3];
+
   return (
     <Container maxW="container.xl" top="10vh" py={20}>
       <VStack spacing={12}>
@@ -176,14 +207,13 @@ function Projects() {
         >
           Projetos
         </Heading>
-        
         <HStack 
           spacing={8} 
           alignItems="stretch" 
           flexDirection={{ base: "column", md: "row" }}
           width="100%"
         >
-          {projectsData.map((project) => (
+          {mainProjects.map((project) => (
             <Box 
               key={project.id} 
               width={{ base: "100%", md: "33.33%" }}
@@ -192,6 +222,19 @@ function Projects() {
               <ProjectCard project={project} />
             </Box>
           ))}
+        </HStack>
+        <HStack 
+          spacing={8} 
+          alignItems="stretch" 
+          width="100%"
+          justifyContent="center"
+        >
+          <Box 
+            key={backupProject.id} 
+            width={{ base: "100%", md: "33.33%" }}
+          >
+            <ProjectCard project={backupProject} />
+          </Box>
         </HStack>
       </VStack>
     </Container>

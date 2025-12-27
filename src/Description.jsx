@@ -44,8 +44,8 @@ function Description() {
                             textAlign={{ base: "center", md: "left" }}
                         >
                             Desenvolvedor Fullstack com experiência a suporte e desenvolvimento em sistemas ERP, com 
-                            especialização em desenvolvimento web. 
-                            Focado em criar soluções eficientes e escaláveis.
+                            especialização em desenvolvimento desktop e web, 
+                            atualmente atuando como desenvolvedor Delphi para sistemas ERP. Focado em criar soluções eficientes e escaláveis.
                         </Text>
                     </VStack>
                 </Flex>

@@ -30,9 +30,9 @@ function Timeline() {
                                 <Text textStyle="md" textAlign="justify">
                                     Desenvolvimento de software para produtos como ERP;
                                     <br />
-                                    Manutencao, correção e ajustes de bancos de dados Firebird;
+                                    Manutencão, correção e ajustes de bancos de dados PostgreSQL/Firebird;
                                     <br />
-                                    Treinamento e auxílio a clientes de sistema ERP;
+                                    Atendimento de chamados de desenvolvimento para representantes;
                                 </Text>
                             </TimelineContent>
                         </TimelineItem>
@@ -48,7 +48,7 @@ function Timeline() {
                                     <br />
                                     Instalação e suporte de equipamentos como impressoras e demais equipamentos fiscais;
                                     <br />
-                                    Manutenção e correção de erros relacionados a bancos de dados SQL;
+                                    Manutenção e correção de erros relacionados a bancos de dados Firebird;
                                 </Text>
                             </TimelineContent>
                         </TimelineItem>
@@ -60,7 +60,7 @@ function Timeline() {
                                 <TimelineTitle>Estagiário de Engenharia</TimelineTitle>
                                 <TimelineDescription>fev de 2021 - dez de 2021</TimelineDescription>
                                 <Text textStyle="md" textAlign="justify">
-                                    Estagiário na área de engenharia de produtos.
+                                    Estagiário na área de engenharia de produtos em metalúrgica;
                                 </Text>
                             </TimelineContent>
                         </TimelineItem>

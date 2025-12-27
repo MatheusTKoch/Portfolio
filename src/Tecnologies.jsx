@@ -1,7 +1,7 @@
 import { Text, IconButton, Box, Container, SimpleGrid } from "@chakra-ui/react";
-import { FaVuejs, FaReact, FaNodeJs, FaJava, FaPython } from "react-icons/fa";
+import { FaVuejs, FaReact, FaNodeJs, FaPython } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiMysql, SiTypescript } from "react-icons/si";
+import { SiTypescript, SiPostgresql, SiDelphi } from "react-icons/si";
 import { Tooltip } from "./components/ui/tooltip";
 
 function Technologies() {
@@ -97,12 +97,12 @@ function Technologies() {
                         </IconButton>
                     </Tooltip>
 
-                    <Tooltip content="MySQL - Sistema de gerenciamento de banco de dados relacional" interactive>
+                    <Tooltip content="PostgreSQL - Sistema de gerenciamento de banco de dados relacional avançado" interactive>
                         <IconButton
-                            aria-label="MySQL"
+                            aria-label="PostgreSQL"
                             size="2xl"
                             variant="ghost"
-                            color="blue.400"
+                            color="blue.500"
                             rounded="xl"
                             transition="all 0.3s"
                             _hover={{
@@ -110,7 +110,7 @@ function Technologies() {
                                 bg: "whiteAlpha.200"
                             }}
                             bg="transparent">
-                            <SiMysql />
+                            <SiPostgresql />
                         </IconButton>
                     </Tooltip>
 
@@ -131,12 +131,12 @@ function Technologies() {
                         </IconButton>
                     </Tooltip>
 
-                    <Tooltip content="Java - Linguagem de programação orientada a objetos" interactive>
+                    <Tooltip content="Delphi - Ambiente de desenvolvimento rápido para aplicações desktop" interactive>
                         <IconButton
-                            aria-label="Java"
+                            aria-label="Delphi"
                             size="2xl"
                             variant="ghost"
-                            color="red.400"
+                            color="red.500"
                             rounded="xl"
                             transition="all 0.3s"
                             _hover={{
@@ -144,7 +144,7 @@ function Technologies() {
                                 bg: "whiteAlpha.200"
                             }}
                             bg="transparent">
-                            <FaJava />
+                            <SiDelphi />
                         </IconButton>
                     </Tooltip>
 
