@@ -1,8 +1,77 @@
 import { Text, IconButton, Box, Container, SimpleGrid } from "@chakra-ui/react";
-import { FaVuejs, FaReact, FaNodeJs, FaPython } from "react-icons/fa";
+import { FaVuejs, FaReact, FaNodeJs, FaPython, FaDocker, FaFire } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiTypescript, SiPostgresql, SiDelphi } from "react-icons/si";
+import { SiTypescript, SiPostgresql, SiDelphi, SiRedis } from "react-icons/si";
 import { Tooltip } from "./components/ui/tooltip";
+
+const technologies = [
+    {
+        label: "Vue",
+        icon: FaVuejs,
+        color: "green.400",
+        tooltip: "Vue.js - Framework principal para interfaces web modernas"
+    },
+    {
+        label: "React",
+        icon: FaReact,
+        color: "cyan.400",
+        tooltip: "React - Biblioteca JavaScript para interfaces de usuário"
+    },
+    {
+        label: "Node",
+        icon: FaNodeJs,
+        color: "green.400",
+        tooltip: "Node.js - Runtime JavaScript para APIs e backends"
+    },
+    {
+        label: "Javascript",
+        icon: IoLogoJavascript,
+        color: "yellow.400",
+        tooltip: "JavaScript - Linguagem base para desenvolvimento web"
+    },
+    {
+        label: "Typescript",
+        icon: SiTypescript,
+        color: "blue.600",
+        tooltip: "TypeScript - JavaScript tipado para projetos mais robustos"
+    },
+    {
+        label: "PostgreSQL",
+        icon: SiPostgresql,
+        color: "blue.500",
+        tooltip: "PostgreSQL - Banco relacional usado em ERP e projetos web"
+    },
+    {
+        label: "Firebird",
+        icon: FaFire,
+        color: "orange.400",
+        tooltip: "Firebird - Banco de dados utilizado em sistemas ERP"
+    },
+    {
+        label: "Delphi",
+        icon: SiDelphi,
+        color: "red.500",
+        tooltip: "Delphi - Desenvolvimento desktop para sistemas ERP"
+    },
+    {
+        label: "Docker",
+        icon: FaDocker,
+        color: "blue.400",
+        tooltip: "Docker - Containerização de aplicações e infraestrutura"
+    },
+    {
+        label: "Redis",
+        icon: SiRedis,
+        color: "red.400",
+        tooltip: "Redis - Cache e sessões em aplicações web"
+    },
+    {
+        label: "Python",
+        icon: FaPython,
+        color: "blue.400",
+        tooltip: "Python - Scripts, automações e ferramentas auxiliares"
+    }
+];
 
 function Technologies() {
     return (
@@ -29,141 +98,28 @@ function Technologies() {
                     mx="auto"
                     px={{ base: 10, md: 14 }}
                 >
-                    <Tooltip content="Vue.js - Framework JavaScript progressivo para construção de interfaces" interactive>
-                        <IconButton
-                            aria-label="Vue"
-                            size="2xl"
-                            variant="ghost"
-                            color="green.400"
-                            rounded="xl"
-                            transition="all 0.3s"
-                            _hover={{
-                                transform: "translateY(-2px)",
-                                bg: "whiteAlpha.200"
-                            }}
-                            bg="transparent">
-                            <FaVuejs />
-                        </IconButton>
-                    </Tooltip>
-
-                    <Tooltip content="React - Biblioteca JavaScript para criar interfaces de usuário" interactive>
-                        <IconButton
-                            aria-label="React"
-                            size="2xl"
-                            variant="ghost"
-                            color="cyan.400"
-                            rounded="xl"
-                            transition="all 0.3s"
-                            _hover={{
-                                transform: "translateY(-2px)",
-                                bg: "whiteAlpha.200"
-                            }}
-                            bg="transparent">
-                            <FaReact />
-                        </IconButton>
-                    </Tooltip>
-
-                    <Tooltip content="Node.js - Ambiente de execução JavaScript server-side" interactive>
-                        <IconButton
-                            aria-label="Node"
-                            size="2xl"
-                            variant="ghost"
-                            color="green.400"
-                            rounded="xl"
-                            transition="all 0.3s"
-                            _hover={{
-                                transform: "translateY(-2px)",
-                                bg: "whiteAlpha.200"
-                            }}
-                            bg="transparent">
-                            <FaNodeJs />
-                        </IconButton>
-                    </Tooltip>
-
-                    <Tooltip content="JavaScript - Linguagem de programação versátil e dinâmica" interactive>
-                        <IconButton
-                            aria-label="Javascript"
-                            size="2xl"
-                            variant="ghost"
-                            color="yellow.400"
-                            rounded="xl"
-                            transition="all 0.3s"
-                            _hover={{
-                                transform: "translateY(-2px)",
-                                bg: "whiteAlpha.200"
-                            }}
-                            bg="transparent">
-                            <IoLogoJavascript />
-                        </IconButton>
-                    </Tooltip>
-
-                    <Tooltip content="PostgreSQL - Sistema de gerenciamento de banco de dados relacional avançado" interactive>
-                        <IconButton
-                            aria-label="PostgreSQL"
-                            size="2xl"
-                            variant="ghost"
-                            color="blue.500"
-                            rounded="xl"
-                            transition="all 0.3s"
-                            _hover={{
-                                transform: "translateY(-2px)",
-                                bg: "whiteAlpha.200"
-                            }}
-                            bg="transparent">
-                            <SiPostgresql />
-                        </IconButton>
-                    </Tooltip>
-
-                    <Tooltip content="TypeScript - Superset tipado do JavaScript" interactive>
-                        <IconButton
-                            aria-label="Typescript"
-                            size="2xl"
-                            variant="ghost"
-                            color="blue.600"
-                            rounded="xl"
-                            transition="all 0.3s"
-                            _hover={{
-                                transform: "translateY(-2px)",
-                                bg: "whiteAlpha.200"
-                            }}
-                            bg="transparent">
-                            <SiTypescript />
-                        </IconButton>
-                    </Tooltip>
-
-                    <Tooltip content="Delphi - Ambiente de desenvolvimento rápido para aplicações desktop" interactive>
-                        <IconButton
-                            aria-label="Delphi"
-                            size="2xl"
-                            variant="ghost"
-                            color="red.500"
-                            rounded="xl"
-                            transition="all 0.3s"
-                            _hover={{
-                                transform: "translateY(-2px)",
-                                bg: "whiteAlpha.200"
-                            }}
-                            bg="transparent">
-                            <SiDelphi />
-                        </IconButton>
-                    </Tooltip>
-
-                    <Tooltip content="Python - Linguagem de programação de alto nível" interactive>
-                        <IconButton
-                            aria-label="Python"
-                            size="2xl"
-                            variant="ghost"
-                            color="blue.400"
-                            rounded="xl"
-                            transition="all 0.3s"
-                            _hover={{
-                                transform: "translateY(-2px)",
-                                bg: "whiteAlpha.200"
-                            }}
-                            bg="transparent">
-                            <FaPython />
-                        </IconButton>
-                    </Tooltip>
+                    {technologies.map((tech) => {
+                        const Icon = tech.icon;
+                        return (
+                            <Tooltip key={tech.label} content={tech.tooltip} interactive>
+                                <IconButton
+                                    aria-label={tech.label}
+                                    size="2xl"
+                                    variant="ghost"
+                                    color={tech.color}
+                                    rounded="xl"
+                                    transition="all 0.3s"
+                                    _hover={{
+                                        transform: "translateY(-4px)",
+                                        bg: "whiteAlpha.200"
+                                    }}
+                                    bg="transparent"
+                                >
+                                    <Icon />
+                                </IconButton>
+                            </Tooltip>
+                        );
+                    })}
                 </SimpleGrid>
             </Container>
         </Box>

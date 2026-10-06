@@ -25,12 +25,12 @@ function Timeline() {
                                 <BiExpandHorizontal></BiExpandHorizontal>
                             </TimelineConnector>
                             <TimelineContent>
-                                <TimelineTitle>Desenvolvedor de Software</TimelineTitle>
+                                <TimelineTitle>Desenvolvedor de Software — Prioriza Tec</TimelineTitle>
                                 <TimelineDescription>mai de 2025 - o momento</TimelineDescription>
                                 <Text textStyle="md" textAlign="justify">
                                     Desenvolvimento de software para produtos como ERP;
                                     <br />
-                                    Manutencão, correção e ajustes de bancos de dados PostgreSQL/Firebird;
+                                    Manutenção, correção e ajustes de bancos de dados PostgreSQL/Firebird;
                                     <br />
                                     Atendimento de chamados de desenvolvimento para representantes;
                                 </Text>
@@ -41,10 +41,10 @@ function Timeline() {
                                 <BiSupport></BiSupport>
                             </TimelineConnector>
                             <TimelineContent>
-                                <TimelineTitle>Suporte de Sistema ERP</TimelineTitle>
+                                <TimelineTitle>Suporte de Sistema ERP — Krafti Tecnologia da Informação</TimelineTitle>
                                 <TimelineDescription>jul de 2022 - abr de 2025</TimelineDescription>
                                 <Text textStyle="md" textAlign="justify">
-                                    Atendimento, treinamento e suporte a cliente de sistema ERP;
+                                    Atendimento, treinamento e suporte a clientes de sistema ERP;
                                     <br />
                                     Instalação e suporte de equipamentos como impressoras e demais equipamentos fiscais;
                                     <br />
@@ -57,7 +57,7 @@ function Timeline() {
                                 <FaProjectDiagram></FaProjectDiagram>
                             </TimelineConnector>
                             <TimelineContent>
-                                <TimelineTitle>Estagiário de Engenharia</TimelineTitle>
+                                <TimelineTitle>Estagiário de Engenharia — Celsus</TimelineTitle>
                                 <TimelineDescription>fev de 2021 - dez de 2021</TimelineDescription>
                                 <Text textStyle="md" textAlign="justify">
                                     Estagiário na área de engenharia de produtos em metalúrgica;
@@ -69,10 +69,10 @@ function Timeline() {
                                 <FaCashRegister></FaCashRegister>
                             </TimelineConnector>
                             <TimelineContent>
-                                <TimelineTitle>Atendente</TimelineTitle>
+                                <TimelineTitle>Atendente — Confeitaria Geni</TimelineTitle>
                                 <TimelineDescription>out de 2017 - jan de 2021</TimelineDescription>
                                 <Text textStyle="md" textAlign="justify">
-                                    Atendente na área de alimentos, atuando como repositor e manutenção do software da empresa.
+                                    Atendente na área de alimentos, atuando como repositor e com manutenção do software da empresa.
                                 </Text>
                             </TimelineContent>
                         </TimelineItem>

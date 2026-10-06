@@ -66,9 +66,9 @@ function Title() {
           fontSize={{ base: "lg", md: "xl" }}
           color="gray.300"
           textAlign="center"
-          maxW="600px"
+          maxW="720px"
         >
-          Desenvolvedor de Software e estudante de Análise e Desenvolvimento de Sistemas   
+          Desenvolvedor de Software com foco em sistemas ERP (Delphi) e aplicações web full stack — estudante de Análise e Desenvolvimento de Sistemas
         </Text>
       </Flex>
     </Box>

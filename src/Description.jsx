@@ -43,9 +43,10 @@ function Description() {
                             color="whitesmoke"
                             textAlign={{ base: "center", md: "left" }}
                         >
-                            Desenvolvedor Fullstack com experiência a suporte e desenvolvimento em sistemas ERP, com 
-                            especialização em desenvolvimento desktop e web, 
-                            atualmente atuando como desenvolvedor Delphi para sistemas ERP. Focado em criar soluções eficientes e escaláveis.
+                            Desenvolvedor Full Stack focado em resolução de problemas, com experiência em suporte e
+                            desenvolvimento de sistemas ERP. Atuo com Delphi no desktop e com Vue.js, Node.js e
+                            PostgreSQL no ecossistema web. Busco soluções eficientes, escaláveis e bem estruturadas
+                            — do atendimento a chamados até a entrega de features.
                         </Text>
                     </VStack>
                 </Flex>
